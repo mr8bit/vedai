@@ -87,16 +87,25 @@ def update_annotations(filename):
 				y.append(int(data.iloc[row]['corner3_y']))
 				y.append(int(data.iloc[row]['corner4_y']))
 				y.sort()
+				if x[0] > 1024:
+					x[0] = 1024
+				if x[-1] > 1024:
+					x[-1] = 1024
+				if y[0] > 1024:
+					y[0] = 1024
+				if y[-1] > 1024:
+					y[-1] = 1024
 				xmin = ET.SubElement(bndbox, 'xmin').text = '{0}'.format(x[0])
 				ymin = ET.SubElement(bndbox, 'ymin').text = '{0}'.format(y[0])
 				xmax = ET.SubElement(bndbox, 'xmax').text = '{0}'.format(x[-1])
 				ymax = ET.SubElement(bndbox, 'ymax').text = '{0}'.format(y[-1])
 				x = []
 				y = []
+				tree = ET.ElementTree(annotation)
+				tree.write("images/{0}.xml".format(imagename))
 			except ValueError as e:
 				pass
-		tree = ET.ElementTree(annotation)
-		tree.write("images/{0}.xml".format(imagename))
+
 
 
 		"""data['class'].replace(11, 3, inplace=True)
