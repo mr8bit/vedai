@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>plane</folder>
+	<filename>2569.jpg</filename>
+	<path>/home/cyber/Документы/airport/plane/2569.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plane</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>7</xmin>
+			<ymin>290</ymin>
+			<xmax>209</xmax>
+			<ymax>565</ymax>
+		</bndbox>
+	</object>
+</annotation>
