@@ -21,18 +21,18 @@ def xml_to_csv(path):
                 print("ERORR y_min < 0 in file: {0}".format(xml_file))
                 y_min = 0
 
-            if int(member[4][0].text) > 1024:
-                print("ERORR x_min > 1024 in file: {0}".format(xml_file))
-                x_min = 1024
-            if int(member[4][1].text) > 1024:
-                print("ERORR y_min > 1024 in file: {0}".format(xml_file))
-                y_min = 1024
-            if int(member[4][2].text) > 1024:
-                print("ERORR x_max > 1024 in file: {0}".format(xml_file))
-                x_max = 1024
-            if int(member[4][3].text) > 1024:
-                print("ERORR y_max > 1024 in file: {0}".format(xml_file))
-                y_max = 1024
+            if int(member[4][0].text) > 256:
+                print("ERORR x_min > 256 in file: {0}".format(xml_file))
+                x_min = 256
+            if int(member[4][1].text) > 256:
+                print("ERORR y_min > 256 in file: {0}".format(xml_file))
+                y_min = 256
+            if int(member[4][2].text) > 256:
+                print("ERORR x_max > 256 in file: {0}".format(xml_file))
+                x_max = 256
+            if int(member[4][3].text) > 256:
+                print("ERORR y_max > 256 in file: {0}".format(xml_file))
+                y_max = 256
             value = (root.find('filename').text,
                      int(root.find('size')[0].text),
                      int(root.find('size')[1].text),

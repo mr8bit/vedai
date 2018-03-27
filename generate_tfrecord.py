@@ -31,32 +31,8 @@ FLAGS = flags.FLAGS
 def class_text_to_int(row_label):
     if row_label == 'car':
         return 1
-    elif row_label == 'truck':
-        return 2
-    elif row_label == 'pickup':
-        return 3
-    elif row_label == 'tractor':
-        return 4
-    elif row_label == 'camping':
-        return 5
-    elif row_label == 'boat':
-        return 6
-    elif row_label == 'motorcycle':
-        return 7
-    elif row_label == 'bus':
-        return 8
-    elif row_label == 'van':
-        return 9
-    elif row_label == 'other':
-        return 10
-    elif row_label == 'small car':
-        return 11
-    elif row_label == 'large car':
-        return 12
-    elif row_label == 'plane':
-        return 13
     else:
-        return 0
+        return None
 
 
 def split(df, group):

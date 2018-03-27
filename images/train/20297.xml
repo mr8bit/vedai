@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>256_part_2</folder>
+	<filename>20297.jpg</filename>
+	<path>/home/cyber/clone_vedai/vedai/cowc/256_part_2/20297.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>117</ymin>
+			<xmax>105</xmax>
+			<ymax>137</ymax>
+		</bndbox>
+	</object>
+</annotation>

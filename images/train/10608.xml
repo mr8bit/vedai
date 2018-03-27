@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>256</folder>
+	<filename>10608.jpg</filename>
+	<path>/home/cyber/vedai/images/vedai/256/10608.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>161</xmin>
+			<ymin>180</ymin>
+			<xmax>189</xmax>
+			<ymax>215</ymax>
+		</bndbox>
+	</object>
+</annotation>
